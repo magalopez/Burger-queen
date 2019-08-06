@@ -3,7 +3,7 @@ import React from "react";
 const Product = ({
   title,
   price,
-  inventory,
+  count,
   addToCart,
   removeFromCart,
   deleteFromCart
@@ -15,7 +15,7 @@ const Product = ({
       </p>
       <div className="field is-grouped">
         <p className="control">
-          <span className="tag is-warning is-medium">{inventory}</span>
+          <span className="tag is-warning is-medium">{count}</span>
         </p>
         <p className="control">
           <a href="/#" className="button is-link" onClick={addToCart}>

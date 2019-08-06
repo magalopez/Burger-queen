@@ -5,7 +5,8 @@ const ProductList = ({
   products,
   addToCart,
   removeFromCart,
-  deleteFromCart
+  deleteFromCart,
+  count
   // available
 }) => {
   return (
@@ -15,6 +16,7 @@ const ProductList = ({
           {products.map(prod => (
             <Product
               key={prod.id}
+              count={prod.count}
               title={prod.title}
               price={prod.price}
               addToCart={() => addToCart(prod.id)}

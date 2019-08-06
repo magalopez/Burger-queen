@@ -15,7 +15,8 @@ const SubButton = ({ productElement, addProduct }) => {
               addProduct(
                 individualProduct.id,
                 individualProduct.title,
-                individualProduct.price
+                individualProduct.price,
+                individualProduct.counter
               );
             }}
             text={individualProduct.title}
