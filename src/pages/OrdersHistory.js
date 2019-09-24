@@ -1,9 +1,14 @@
 import React from "react";
+import building from "../assets/enconstruccion.gif";
 
 const OrdersHistory = () => {
   return (
     <>
-      <h1>Hello from OrdersHistory</h1>
+      <div className="history-view">
+        <figure>
+          <img src={building} alt="building" />
+        </figure>
+      </div>
     </>
   );
 };

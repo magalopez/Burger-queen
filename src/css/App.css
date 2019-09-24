@@ -50,3 +50,15 @@ padding-left: 60px !important;}
   text-transform: uppercase;
   font-family: 'Alegreya Sans', sans-serif;
 }
+
+.home-container{
+  background-image: url(https://www.encargos.com.mx/wp-content/uploads/2019/08/ALAPARRILLA-DoubleWesternBaconCheeseburger-min-1.jpg);
+  width: 100%;
+  height: 1080px;;
+}
+
+.history-view{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
