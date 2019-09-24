@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ProductList from "./productList.jsx";
-import ContainerMenu from "./containerMenu.jsx";
+import ProductList from "../components/menu_view/productList.jsx";
+import ContainerMenu from "../components/menu_view/containerMenu.jsx";
 import { useCollection } from "react-firebase-hooks/firestore";
-import { ordersData } from "../../services/firebase";
-import { Client } from "./cliente";
+import { ordersData } from "../services/firebase";
+import { Client } from "../components/menu_view/cliente";
 
 const MenuView = () => {
   const [products, setProducts] = useState([]);

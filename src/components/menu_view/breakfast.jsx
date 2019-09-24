@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Button from "../generic_components/button";
-import SubButton from "../generic_components/subButtons";
+import Button from "../Button";
+import SubButton from "../SubButtons";
 
 const Breakfast = ({ allProducts, addProduct }) => {
   const [product, setProduct] = useState([...allProducts]);

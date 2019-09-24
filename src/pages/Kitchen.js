@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 //import Footer from "../footer";
-import { ordersData } from "../../services/firebase";
-import OrderPending from "../kitchen_view/OrderPending.jsx";
-import OrderCooking from "../kitchen_view/OrderCooking";
-import OrderFinished from "../kitchen_view/OrderFinished";
+import { ordersData } from "../services/firebase";
+import OrderPending from "../components/kitchen_view/OrderPending.jsx";
+import OrderCooking from "../components/kitchen_view/OrderCooking";
+import OrderFinished from "../components/kitchen_view/OrderFinished";
 const KitchenView = () => {
   const [value, loading, error] = useCollection(
     ordersData.where("status", "==", "pendiente"),

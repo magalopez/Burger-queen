@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/burgerqueen.png";
+import logo from "../assets/burger_queen.png";
 
 const NavBar = () => {
   return (
@@ -11,7 +11,9 @@ const NavBar = () => {
         aria-label="main navigation"
         style={{ "min-height": 2.25 + "rem" }}
       >
-        <h1 className="  column is-12 has-text-centered ">BURGER QUEEN</h1>
+        <h1 className="title-burguer-queen  column is-12 has-text-centered ">
+          Burger Queen
+        </h1>
       </nav>
       <nav className="navbar is-warning">
         <div className="container">
@@ -23,12 +25,12 @@ const NavBar = () => {
               <div className="navbar-item">
                 <div className="field is-grouped ">
                   <div className="control">
-                    <a href="/#" class="title has-text-white ">
+                    <Link to="/menu" class="title has-text-white ">
                       <span className="icon">
                         <i className="fas fa-pencil-alt"></i>
                       </span>
                       <span>ORDEN</span>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="control">
@@ -37,13 +39,12 @@ const NavBar = () => {
                       COCINA
                     </Link>
                   </div>
-                  {/*  <div className="control">
-                    <Link to="historial" class="title has-text-white ">
-                      
+                  <div className="control">
+                    <Link to="/historial" class="title has-text-white ">
                       <i className="fas fa-clock"></i>
                       HISTORIAL
                     </Link>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>

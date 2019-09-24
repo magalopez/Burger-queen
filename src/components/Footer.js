@@ -5,8 +5,8 @@ const Footer = () => {
       <div class="container">
         <div class="content has-text-centered">
           <p>
-            <strong>Burguer - Queen</strong> por{" "}
-            <a href="https://github.com/magalopez">Maria Lopéz</a> y{" "}
+            <strong>Burger - Queen</strong> por{" "}
+            <a href="https://github.com/magalopez">Maga Lopéz</a> y{" "}
             <a href="https://github.com/yenifergalarza">Yenifer Galarza</a>.
           </p>
         </div>

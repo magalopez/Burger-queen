@@ -1,22 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router , Switch, Route } from "react-router-dom";
-import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./css/App.css";
 
 import "firebase/firestore";
-import NavBar from "./components/navBar";
-import MenuView from "./components/menu_view/menu";
-import KitchenView from "./components/kitchen_view/kitchen";
-import HistoryView from "./components/history_view/ordersHistory";
-import Default from "./components/default";
+
+import Navbar from "./components/Navbar";
+import MenuView from "./pages/Menu";
+import KitchenView from "./pages/Kitchen";
+import HistoryView from "./pages/OrdersHistory";
+import Default from "./pages/Default";
 
 const App = () => {
-  // Initialize Firebase
-
   return (
     <Router>
-      <NavBar />
+      <Navbar />
       <Switch>
-        <Route exact path="/" component={MenuView} />
+        <Route exact path="/menu" component={MenuView} />
         <Route path="/cocina" component={KitchenView} />
         <Route path="/historial" component={HistoryView} />
         <Route component={Default} />

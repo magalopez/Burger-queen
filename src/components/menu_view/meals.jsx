@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Button from "../generic_components/button";
-import SubButton from "../generic_components/subButtons.js";
+import Button from "../Button";
+import SubButton from "../SubButtons.js";
 
 const Meals = ({ allProducts, addProduct }) => {
   const [product, setProduct] = useState([...allProducts]);

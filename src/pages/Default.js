@@ -3,7 +3,7 @@ import React from "react";
 const Default = () => {
   return (
     <>
-      <h1>Hello from default</h1>
+      <h1>404: Not Found</h1>
     </>
   );
 };
