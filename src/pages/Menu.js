@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ProductList from "../components/menu_view/productList.jsx";
-import ContainerMenu from "../components/menu_view/containerMenu.jsx";
-import { useCollection } from "react-firebase-hooks/firestore";
 import { ordersData } from "../services/firebase";
-import { Client } from "../components/menu_view/cliente";
+
+import ProductList from "../components/menu_view/ProductList";
+import ContainerMenu from "../components/menu_view/ContainerMenu";
+import Client from "../components/menu_view/Cliente";
 
 const MenuView = () => {
   const [products, setProducts] = useState([]);
@@ -35,8 +35,6 @@ const MenuView = () => {
       }
     });
 
-    console.log(productsNew);
-
     setProducts(productsNew);
     return products;
   };
@@ -49,7 +47,6 @@ const MenuView = () => {
         return productsNew.splice(productsNew[index], 1);
       }
     });
-    console.log(productsNew);
     setProducts(productsNew);
     return products;
   };
@@ -68,10 +65,6 @@ const MenuView = () => {
     return emptyArrayContent;
   };
 
-  // const [value, loading, error] = useCollection(ordersData, {
-  //   snapshotListenOptions: { includeMetadataChanges: true }
-  // });
-
   const sendOrders = (products, clientName) => {
     console.log("entre a firebase", products);
     ordersData.add({
@@ -87,21 +80,6 @@ const MenuView = () => {
   return (
     <>
       <Client client={client} setClient={setClient} />
-      {/* <p>
-        {error && <strong>Error: {JSON.stringify(error)}</strong>}
-        {loading && <span>Document: Loading...</span>}
-        {value && (
-          <span>
-         
-            {value.docs.map(doc => (
-              <React.Fragment key={doc.id}>
-                {JSON.stringify(doc.data())},{" "}
-              </React.Fragment>
-            ))}
-          </span>
-        )}
-      </p> */}
-
       <div
         className="columns container is-fluid box "
         style={{ height: 45 + "vh" }}

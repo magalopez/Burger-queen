@@ -1,6 +1,8 @@
 import React from "react";
-import Product from "./product";
-import ButtonOfTotal from "./totalPrice";
+
+import Product from "./Product";
+import ButtonOfTotal from "./TotalPrice";
+
 const ProductList = ({
   products,
   addToCart,

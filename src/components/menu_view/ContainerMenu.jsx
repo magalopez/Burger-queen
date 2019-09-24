@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Meals from "./meals";
-import Breakfast from "./breakfast";
+
 import { productsData } from "../../services/firebase";
+
+import Meals from "./Meals";
+import Breakfast from "./Breakfast";
 
 const ContainerMenu = ({ addProduct }) => {
   const [state, setState] = useState("breakfast");

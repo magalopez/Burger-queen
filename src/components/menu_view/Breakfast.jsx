@@ -1,27 +1,16 @@
 import React, { useState } from "react";
-import Button from "../Button";
-import SubButton from "../SubButtons.js";
 
-const Meals = ({ allProducts, addProduct }) => {
+import Button from "../Button";
+import SubButton from "../SubButtons";
+
+const Breakfast = ({ allProducts, addProduct }) => {
   const [product, setProduct] = useState([...allProducts]);
 
-  const filterBurguer = products => {
+  const filterSandwich = products => {
     setProduct(allProducts);
     let newArray = [];
     products.filter(element => {
-      if (element.type === "burguer") {
-        newArray.push(element);
-      }
-      return newArray;
-    });
-    return setProduct(newArray);
-  };
-
-  const filterAdditionals = products => {
-    setProduct(allProducts);
-    let newArray = [];
-    products.filter(element => {
-      if (element.type === "additional") {
+      if (element.type === "sandwich") {
         newArray.push(element);
       }
       return newArray;
@@ -33,7 +22,7 @@ const Meals = ({ allProducts, addProduct }) => {
     setProduct(allProducts);
     let newArray = [];
     products.filter(element => {
-      if (element.type === "drinks") {
+      if (element.type === "morningdrinks") {
         newArray.push(element);
       }
       return newArray;
@@ -45,19 +34,10 @@ const Meals = ({ allProducts, addProduct }) => {
     <>
       <Button
         onclick={() => {
-          filterBurguer(allProducts);
+          filterSandwich(allProducts);
         }}
-        text={"HAMBURGUESAS"}
+        text={"SANDWICHS"}
         classOfComponent={"tile is-child button is-warning columns is-mobile"}
-      />
-
-      <Button
-        onclick={() => {
-          filterAdditionals(allProducts);
-        }}
-        text={"ACOMPAÑAMIENTOS"}
-        classOfComponent={"tile is-child button is-warning columns is-mobile"}
-        
       />
 
       <Button
@@ -72,4 +52,4 @@ const Meals = ({ allProducts, addProduct }) => {
     </>
   );
 };
-export default Meals;
+export default Breakfast;

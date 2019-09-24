@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Client = ({ client, setClient }) => {
+const Client = ({ client, setClient }) => {
   const onChange = e => {
     let string = e.target.value;
     setClient(string);
@@ -26,3 +26,5 @@ export const Client = ({ client, setClient }) => {
     </div>
   );
 };
+
+export default Client;

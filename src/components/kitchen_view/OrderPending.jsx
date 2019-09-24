@@ -10,9 +10,7 @@ const OrderPending = ({ keyPENDING, id, time, name, status, cart }) => {
   const second = time.toDate().getSeconds();
   let stop = false;
 
-  const handlerStoppedLoop = () => {
-    stop = true;
-  };
+  // const handlerStoppedLoop = () => (stop = true);
 
   useEffect(() => {
     const startTime = () => {
