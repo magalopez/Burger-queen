@@ -1,11 +1,14 @@
 # Burger Queen
 
+Ingresa a: 
+
+[Burger Queen Site](https://youthful-hermann-7d7052.netlify.com/)
+
 ## Resumen del proyecto
 
 Un pequeño restaurante de hamburguesas, que está creciendo, necesita una
 interfaz en la que puedan tomar pedidos usando una _tablet_, y enviarlos
-a la cocina para que se preparen ordenada y eficientemente (a través de un
-  _backend_ del que nos darán detalles más adelante).
+a la cocina para que se preparen ordenada y eficientemente.
 
 ![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
 
@@ -49,14 +52,10 @@ Esta es la información que tenemos del cliente:
 > Nuestros clientes son bastante indecisos, por lo que es muy común que cambien
 > el pedido varias veces antes de finalizarlo.
 
-La interfaz debe mostrar los dos menús (desayuno y resto del día), cada uno
-con todos sus _productos_. El usuario debe poder ir eligiendo qué _productos_
-agregar y la interfaz debe ir mostrando el _resumen del pedido_ con el
+La interfaz muestra dos menús (desayuno y resto del día), cada uno
+con todos sus _productos_. El usuario puede ir eligiendo qué _productos_
+agregar y la interfaz muestra el _resumen del pedido_ con el
 costo total.
-
-### Definición del producto
-
-El [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s) nos presenta este _backlog_ que es el resultado de su trabajo con el cliente hasta hoy.
 
 ---------------------
 #### [Historia de usuario 1] Mesero/a debe poder tomar pedido de cliente
@@ -73,14 +72,6 @@ Lo que debe ocurrir para que se satisfagan las necesidades del usuario)
   * Enviar pedido a cocina (guardar en alguna base de datos).
   * Se ve y funciona bien en una _tablet_
 
-##### Definición de terminado
-Lo acordado que debe ocurrir para decir que la historia está terminada.
-  * Debes haber recibido _code review_ de al menos una compañera.
-  * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-  * Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
-  * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
-
-
 ---------------------
 
 #### [Historia de usuario 2] Jefe de cocina debe ver los pedidos
@@ -94,12 +85,6 @@ que un pedido está listo para servirlo a un cliente.
   * Ver el tiempo que tomó prepara el pedido desde que llegó hasta que se
   marcó como completado.
 
-##### Definición de terminado
-  * Debes haber recibido _code review_ de al menos una compañera.
-  * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-  * Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
-  * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
-
 ---------------------
 
 #### [Historia de usuario 3] Meserx debe ver pedidos listos para servir
@@ -110,11 +95,5 @@ rápidamente a los clientes que las hicieron.
   * Ver listado de pedido listos para servir.
   * Marcar pedidos que han sido entregados.
 
-##### Definición de terminado
-  * Debes haber recibido _code review_ de al menos una compañera.
-  * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-  * Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
-  * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
-  * Los datos se deben mantener íntegros, incluso después de que un pedido ha
-  terminado. Todo esto para poder tener estadísticas en el futuro.
+
 
